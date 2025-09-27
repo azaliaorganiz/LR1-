@@ -1,0 +1,25 @@
+scores  = {
+    "Alice" : 85,
+    "Bob" : 90,
+}
+print(scores)
+scores["Charlie"] = 78
+print(scores)
+scores["Bob"] = 95
+print(scores)
+scoreDave = scores.get("Dave")
+print(F"scoreDave : {scoreDave}") # None так как нет такого ключа
+scoreAlice = scores.get("Alice")
+print(F"scoreAlice : {scoreAlice}")
+scores.pop("Alice")
+print(scores)
+print(f"len scores : {len(scores)}")
+assert "Alice" not in scores, "нет такого алиса"
+
+print("ключи : ")
+for key in scores.keys():
+    print(key)
+print("\b")
+print("значения : ")
+for value in scores.values():
+    print(value)

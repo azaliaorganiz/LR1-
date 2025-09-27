@@ -1,0 +1,28 @@
+import copy
+import math
+
+numbers = [7,2,5]
+print(F"numbers: {numbers}")
+numbers.append(4)
+print(F"append: {numbers}")
+numbers.insert(1,10)
+print(F"insert: {numbers}")
+numbers.extend([1,1,1])
+print(F"extend: {numbers}")
+numbers.remove(7)
+print(F"remove: {numbers}")
+pop:int = numbers.pop()
+print(F"pop: {pop}")
+numbers.sort()
+print(F"sort: {numbers}")
+numbers.reverse()
+print(F"reverse: {numbers}")
+countTwo = numbers.count(2)
+print(F"countTwo: {countTwo}")
+print(F"first index 1: {numbers.index(1)} ")
+copyNum = numbers.copy()
+deepCopyNum = copy.deepcopy(numbers)
+print(F"copyNum : {copyNum} ")
+print(F"deepCopyNum : {deepCopyNum} ")
+numbers.clear()
+print(f"clear: {numbers}")
